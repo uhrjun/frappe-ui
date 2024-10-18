@@ -8,6 +8,9 @@ const fullConfig = resolveConfig(tailwindConfig)
 export default defineConfig({
   setupFile: './histoire.setup.ts',
   plugins: [HstVue()],
+  vite: {
+		base: '/frappe-ui/',
+	},
   theme: {
     title: 'Frappe UI',
     defaultColorScheme: 'light',
